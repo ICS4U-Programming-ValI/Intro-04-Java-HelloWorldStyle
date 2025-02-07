@@ -8,12 +8,22 @@
  * @version 1.0
  * @since 2025-02-06
  */
-public class HelloWorldStyle {
+public final class HelloWorldStyle {
 
     /**
-     * The main method displays messages to the console.
+     * This is a private constructor to satisfy style checker.
      *
-     * @param args Command-line arguments (not used).
+     * @exception IllegalStateException Utility class.
+     * @see IllegalStateException
+     */
+    private HelloWorldStyle() {
+        throw new IllegalStateException("utility class");
+    }
+
+    /**
+     * This is the main method.
+     *
+     * @param args unused
      */
     public static void main(String[] args) {
         System.out.println("Hello Alex,");
